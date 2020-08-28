@@ -13,7 +13,7 @@ const routes = [
   {
     path: "/products",
     name: "產品列表",
-    component: () => import("../views/About.vue"),
+    component: () => import("../views/Products.vue"),
   },
   {
     path: "/cart",
