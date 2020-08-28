@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21a5e1"],{bae1:function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement;n._self._c;return n._m(0)},c=[function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{staticClass:"login"},[t("h1",[n._v("登入頁面")])])}],r={name:"Login",data:function(){return{}}},u=r,i=t("2877"),l=Object(i["a"])(u,a,c,!1,null,null,null);e["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-2d21a5e1.b64d3903.js.map

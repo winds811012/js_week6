@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
@@ -7,46 +8,47 @@ const routes = [
   {
     path: "/",
     name: "首頁",
-    component: () => import("../views/Home.vue"),
+    component: Home,
   },
   {
     path: "/products",
     name: "產品列表",
-    component: () => import("../views/Products.vue"),
+    component: () => import("../views/About.vue"),
   },
   {
     path: "/cart",
     name: "購物車",
-    component: () => import("../views/Cart.vue"),
+    component: () => import("/Project/JS直播班/js_week6/src/views/Cart.vue"),
   },
   {
     path: "/contact",
     name: "聯絡我們",
-    component: () => import("../views/Contact.vue"),
+    component: () => import("/Project/JS直播班/js_week6/src/views/Contact.vue"),
   },
   {
     path: "/about",
     name: "關於我們",
-    component: () => import("../views/About.vue"),
+    component: () => import("/Project/JS直播班/js_week6/src/views/About.vue"),
   },
 
   {
     path: "/login",
-    component: () => import("../views/dashbpard/Login.vue"),
+    component: () => import("/Project/JS直播班/js_week6/src/views/dashboard/Login.vue"),
   },
   {
     path: "/admin",
-    component: () => import("../views/Dashboard.vue"),
+    component: () => import("/Project/JS直播班/js_week6/src/views/Dashboard.vue"),
     children: [
       {
         path: "/orders",
-        component: () => import("../views/dashbpard/Order.vue"),
+        component: () => import("/Project/JS直播班/js_week6/src/views/dashboard/Order.vue"),
       },
     ],
   },
 ];
 
 const router = new VueRouter({
+  base: process.env.BASE_URL,
   routes,
 });
 
